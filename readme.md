@@ -1,18 +1,9 @@
-Welcome to May Blog
+Welcome to Django Blog
 ====================
-[![](https://images.microbadger.com/badges/image/gevin/mayblog.svg)](http://microbadger.com/images/gevin/mayblog "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/version/gevin/mayblog.svg)](http://microbadger.com/images/gevin/mayblog "Get your own version badge on microbadger.com")
-
-> Notice: MayBlog is not deprecated, but currently I pay more attention to [OctBlog](https://github.com/flyhigher139/OctBlog)
-
-## Why it named MayBlog?
-
-Just because it is a blog system started in May, 2015. MayBlog is vivid.
-
-:stuck_out_tongue: :stuck_out_tongue: :stuck_out_tongue:
 
 ## Features
 
-MayBlog is a blog system with following features:
+Django Blog is a blog system with following features:
 
 - Powered by django and bootstrap
 - Deployed by docker
@@ -27,7 +18,7 @@ MayBlog is a blog system with following features:
     - RESTful API (under development)
 
 
-## Preview MayBlog
+## Preview Django Blog
 
 - [Frontend Website](http://blog.igevin.info/)
 - [Backend Admin Screenshot](preview.md)
@@ -41,36 +32,36 @@ If you want to see more about the source code, checkout the [source code readme]
 
 ### Run by docker(recommended)
 
-Run MayBlog by docker is recommended, here are some instruction：
+Run Django Blog by docker is recommended, here are some instruction：
 
 #### First Run
 
-1\. Use MayBlog image
+1\. Use Django Blog image
 
 ```bash
-(sudo) docker pull gevin/mayblog
+(sudo) docker pull gevin/Django Blog
 ```
 
-Or you can build your own MayBlog image
+Or you can build your own Django Blog image
 ```bash
-(sudo) docker build -t mayblog .
+(sudo) docker build -t Django Blog .
 
 # Now you can take a cup of coffee and wait for a few minutes :)
 ```
 
-2\. Run MayBlog
+2\. Run Django Blog
 
 ```bash
 (sudo) docker-compose up -d
 ```
 
-3\. Get into MayBlog container and migrate database
+3\. Get into Django Blog container and migrate database
 
 ```bash
-# Specify MayBlog container ID, eg:12345678
+# Specify Django Blog container ID, eg:12345678
 (sudo) docker ps
 
-# Get into MayBlog container
+# Get into Django Blog container
 (sudo) docker exec -it 12345678 bash
 
 # Migrate datebase
@@ -79,20 +70,20 @@ python manage.py migrate
 
 #### After first run
 
-- Start MayBlog
+- Start Django Blog
 
 ```bash
 (sudo) docker-compose start
 ```
 
-- Stop MayBlog
+- Stop Django Blog
 
 ```bash
 (sudo) docker-compose stop
 ```
 
 
-### Initialize MayBlog
+### Initialize Django Blog
 
 When the blog is run, checkout `http://host:port/init` to initialize the system
 
@@ -100,12 +91,5 @@ It will create the superuser, user groups(administrator, editor, writer, contrib
 
 ## License
 
-MayBlog is under [GPL2](LICENSE)
-
-## What's more
-
-If you find a bug or want to add a new feature, just issue me.
-Want to contribute? Please fork MayBlog and pull request to me.
-
-I'm not good at frontend development, so I used a free bootstrap blog theme. If you can redesign the blog theme and admin interface, I'll appriciate your work very much!
+Django Blog is under [GPL2](LICENSE)
 
